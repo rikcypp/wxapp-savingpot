@@ -1,0 +1,48 @@
+<view class='index'>
+  <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+
+  <view class="total">
+    <view class="total_title small-f">日期</view>
+    <view class='monthExpend small-f'>本月:</view>
+    <view class='month'>{{monthExpend}}元</view>
+    <view class="todayExpend small-f">今日</view>
+    <view class="date">{{showDate}}</view>
+    <view class="money-text">{{num1}}</view>
+    <view class="money-unit">元</view>
+  </view>
+  <view class='tip'>
+  <view class='border'>
+  <image class='tip-icon' src='/img/add_p.png' bindtap='creat'></image>
+    <label class="tip-text" bindtap='creat'>点击添加</label>
+  </view>
+    
+  </view>
+
+
+  <view class="kind-list color2">
+    <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+      <view class="kind-list-item">
+        <view id="{{item.id}}" class="kind-list-item-hd color1 {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+          <view class="kind-list-text">{{item.name}}</view>
+          <image class="kind-list-img" src="/img/settlement.png"></image>
+        </view>
+        <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+          <view class="navigator-box color1 {{item.open ? 'navigator-box-show' : ''}}">
+            <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:for-index="i" wx:key="*item">
+              <navigator url="../detail/detail?date={{page.date}}&spendMoney={{page.spendMoney}}&spendWay={{page.spendWay}}&spendWayImg={{page.spendWayImg}}&remarks={{page.remarks}}&index={{i}}" class="navigator">
+                <image class="point" src='/img/point.png'></image>
+                <image class="spend-way-icon" src="{{page.spendWayImg}}"></image>
+                <view class="navigator-text">{{page.spendWay}}</view>
+                <view class="navigator-text">{{page.date}}</view>
+                <view class="navigator-text">{{page.spendMoney}} 元</view>
+                <view class="navigator-arrow"></view>
+              </navigator>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+</view>

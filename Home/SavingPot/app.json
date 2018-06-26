@@ -1,0 +1,46 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/chart/chart",
+    
+    "pages/mine/mine",
+    
+    "pages/detail/detail",
+    
+    "pages/creat/creat"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#8968CD",
+    "navigationBarTitleText": "存钱罐",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFF0"
+  },
+  "tabBar": {
+    "backgroundColor": "#dfd2f9",
+    "selectedColor": "#8968CD",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "/img/fund.png",
+        "selectedIconPath": "/img/fund-fill.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "明细",
+        "iconPath": "/img/detail_d.png",
+        "selectedIconPath": "/img/detail_p.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/img/mine_d-1.png",
+        "selectedIconPath": "/img/mine_p-1.png"
+      }
+    ]
+  }
+}

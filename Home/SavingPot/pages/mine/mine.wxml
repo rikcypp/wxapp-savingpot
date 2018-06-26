@@ -1,0 +1,29 @@
+<!--pages/mine/mine.wxml-->
+<view class='index'>
+  <!--index.wxml-->
+  <view class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+    <view class='stat'>
+  <view>{{totalDays[1]}}</view>
+  <view>{{totalTimes}}</view>
+  </view>
+  <view class='stat'>
+  <view class='smallfont'>总记账天数</view>
+  <view class='smallfont'>总记账笔数</view>
+  </view>
+  </view>
+  
+
+  <view class="line" style=' margin-top: 20rpx;'>
+  </view>
+  <view class="about" bindtap='showAbout'>
+    <image class="about-icon" src="../../img/detail_p.png"></image>
+    <text class="ui-ml20" >关于</text>
+  </view>
+
+  <!--横线-->
+  <view class="line">
+  </view>
+
+</view>

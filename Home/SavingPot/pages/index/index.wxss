@@ -1,0 +1,147 @@
+@import "../common/index.wxss";
+
+.index{
+  background-color: #dfd2f9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.canvas {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+.total{
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-start;
+  align-content:stretch ;
+  align-items: baseline;
+  
+}
+.total_title{
+  margin-left: 10rpx;
+  width: 80rpx;
+}
+.monthExpend{
+  text-align: right;
+  width: 200rpx;
+}
+.month{
+  width: 300rpx;
+}
+.todayExpend{
+  position: relative;
+  left: 30rpx;
+  width: 80rpx;
+}
+.date{
+  margin-left: 10rpx;
+  width: 200rpx;
+  font-size: 25px;
+  font-weight: bold;
+}
+.money-text{
+  margin-left:45rpx;
+  width: 450rpx;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.money-unit{
+  
+  font-weight: bold;
+}
+.record{
+  background-color: #dfd2f9;  
+}
+.tip{
+  position: fixed;
+  bottom: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.border{
+  width: 220rpx;
+  height: 50rpx;
+  border: 2px double white;
+  border-radius:30px;
+}
+.tip-text{
+  position: relative;
+  left: 17rpx;
+  bottom: 10rpx;
+  font-size:11pt;
+}
+.tip-icon{
+  position: relative;
+  left: 15rpx;
+  top: 2rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.text-expend{
+  color: grey;
+  font-size: 28rpx;
+  text-align: center;
+}
+.navigator-box-show{
+  background-color: #dfd2f9;
+}
+
+.text-today-expend-num{
+  color: #10AEFF;
+  font-size: 34rpx;
+  text-align: center;
+}
+.text-month-expend-num{
+  color: #e64340;
+  font-size: 34rpx;
+  text-align: center;
+}
+.text-year-expend-num{
+  color: goldenrod;
+  font-size: 34rpx;
+  text-align: center;
+}
+.today-bill{
+  color: #10AEFF;
+}
+.spend-way-icon{
+  width: 64rpx;
+  height: 64rpx;
+}
+.point{
+  width: 64rpx;
+  height: 64rpx;
+}
+.item-remarks{
+  flex: 10;
+  text-overflow: ellipsis;
+  padding-left: 10rpx;
+}
+.spendway{
+  flex: 3;
+}
+.spendmoney
+{
+  margin-right: 15rpx;
+}
+
+.page-end{
+  background-color: white;
+  width: 100%;
+ 
+}
+.color1{
+  background-color: #c9b3f4;
+}
+.color2{
+  background-color: #ac8bee ;
+}
+.color0{
+  background-color: #dfd2f9;
+}

@@ -1,0 +1,46 @@
+<!--pages/detail/detail.wxml-->
+<!--pages/mine/mine.wxml-->
+<view class='index'>
+
+  <view class="line" style=' margin-top: 20rpx;'>
+    </view>
+    <view class="about">
+      <image class="about-icon" src="../../img/date.png"></image>
+      <text class="ui-ml20">日期</text>
+      <view class="content"> {{date}}</view>
+    </view>
+    <!--横线-->
+    <view class="line">
+    </view>
+    
+    <view class="about">
+      <image class="about-icon" src="../../img/money_p.png"></image>
+      <text class="ui-ml20">金额</text>
+      <view class="content"> {{spendMoney}}</view>
+    </view>
+    <!--横线-->
+    <view class="line">
+    </view>
+    
+    <view class="about">
+      <image class="about-icon" src="{{spendWayImg}}"></image>
+      <text class="ui-ml20">用途</text>
+      <view class="content"> {{spendWay}}</view>
+    </view>
+    <!--横线-->
+    <view class="line">
+    </view>
+    
+    <view class="about">
+      <image class="about-icon" src="../../img/remarks.png"></image>
+      <text class="ui-ml20">备注</text>
+      <view class="content"> {{remarks}}</view>
+    </view>
+    <!--横线-->
+    <view class="line" style='margin-top:40rpx;'>
+    </view>
+    <view class='bottom'>
+    
+    <view class='button1' bindtap='deleteRecord'>删     除</view>
+    </view>
+</view>

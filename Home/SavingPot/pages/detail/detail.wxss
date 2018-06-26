@@ -1,0 +1,38 @@
+/* pages/detail/detail.wxss */
+
+
+.index{
+  background-color: #dfd2f9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.about-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+.about {
+  margin: 20rpx;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.content{
+  flex: 1;
+  text-align: end;
+  margin-right: 30rpx;
+}
+.bottom{
+  
+  position: fixed;
+  bottom: 40rpx;
+  display: flex;
+  width: 100%;
+  justify-content:space-around; 
+}
+.button1{
+  width: 375rpx;
+  border:2px double white;
+  border-radius:30px;
+  text-align: center;
+}
